@@ -6,12 +6,18 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>401</width>
-    <height>300</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>main_window</string>
+   <string>2D Convex Hull Viewer</string>
+  </property>
+  <property name="windowOpacity">
+   <double>7.000000000000000</double>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -27,7 +33,7 @@
       <item>
        <widget class="QPushButton" name="button">
         <property name="text">
-         <string>Change Color</string>
+         <string>Generate</string>
         </property>
        </widget>
       </item>

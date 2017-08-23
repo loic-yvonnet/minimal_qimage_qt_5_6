@@ -7,7 +7,7 @@ main_window::main_window(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    connect(ui->button, SIGNAL(released()), ui->renderer, SLOT(change_color()));
+    connect(ui->button, SIGNAL(released()), ui->renderer, SLOT(generate()));
 }
 
 main_window::~main_window()

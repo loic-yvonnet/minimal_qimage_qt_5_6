@@ -2,7 +2,9 @@
 #define RENDERING_AREA_H
 
 #include <QWidget>
-#include <QPen>
+#include <QPointF>
+
+#include <vector>
 
 namespace Ui {
 class rendering_area;
@@ -17,13 +19,14 @@ public:
     ~rendering_area();
 
 public slots:
-    void change_color();
+    void generate();
 
 private:
     void paintEvent(QPaintEvent *event) Q_DECL_OVERRIDE;
 
     Ui::rendering_area *ui;
-    QPen pen;
+    std::vector<QPointF> points;
+    std::vector<QPointF> convex_hull;
 };
 
 #endif // RENDERING_AREA_H
