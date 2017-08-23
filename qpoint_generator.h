@@ -1,4 +1,0 @@
-#ifndef QPOINT_GENERATOR_H
-#define QPOINT_GENERATOR_H
-
-#endif // QPOINT_GENERATOR_H
